@@ -16,7 +16,7 @@ Role Variables
 
 Available variables (`vars/main.yml`) are listed here alongside default values (`defaults/main.yml`)
 
-####vars
+#### vars  
 `mysql_package`  
 List of packages needed in order to manage database info with ansible.
 
@@ -28,11 +28,12 @@ Dependencies
 
 Example Playbook
 ----------------
-
+```
    - hosts: default
      become: yes
      roles:
        - { role: mysql, install_mysql_default_packages: false }
+```
 
 License
 -------
